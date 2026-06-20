@@ -15,8 +15,10 @@ export default function ServicesPage() {
         title="Services"
         subtitle="On-site clipper and trimmer repair."
       />
-      <section className="page-container pb-20 sm:pb-28">
-        <ClipperRepairSection />
+      <section className="section-muted pb-28 sm:pb-36">
+        <div className="page-container">
+          <ClipperRepairSection />
+        </div>
       </section>
     </>
   );

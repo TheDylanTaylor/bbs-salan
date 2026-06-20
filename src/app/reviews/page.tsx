@@ -21,9 +21,11 @@ export default function ReviewsPage() {
         title="Reviews"
         subtitle={`${avgRating} average from ${business.reviews.length} customers.`}
       />
-      <section className="page-container pb-20 sm:pb-28">
-        <ReviewsGrid reviews={business.reviews} />
-        <GoogleReviewsLink />
+      <section className="section-muted pb-28 sm:pb-36">
+        <div className="page-container">
+          <ReviewsGrid reviews={business.reviews} />
+          <GoogleReviewsLink />
+        </div>
       </section>
     </>
   );

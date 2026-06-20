@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { business } from "@/lib/business";
 
@@ -30,16 +33,36 @@ export function DirectionsButton({
 }
 
 export function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 10);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-800/80 bg-black/90 backdrop-blur-md">
-      <div className="page-container flex items-center justify-between py-5">
-        <Link href="/" className="text-sm font-medium tracking-[0.2em] text-white uppercase">
-          BBS
+    <header
+      className={`sticky top-0 z-50 border-b border-[#E5E7EB] bg-white/95 backdrop-blur-md transition-shadow duration-300 ${
+        scrolled ? "shadow-sm" : ""
+      }`}
+    >
+      <div className="page-container flex items-center justify-between py-6">
+        <Link href="/" className="flex items-center gap-2">
+          <span className="text-sm font-semibold tracking-[0.15em] text-[#111111] uppercase">
+            BBS
+          </span>
+          <span className="h-1.5 w-1.5 rounded-full bg-[#D4A017]" aria-hidden="true" />
         </Link>
 
         <nav className="hidden items-center gap-10 md:flex" aria-label="Main navigation">
           {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href} className="link-subtle">
+            <Link
+              key={link.href}
+              href={link.href}
+              className="text-sm text-[#6B7280] transition-colors duration-200 hover:text-[#111111]"
+            >
               {link.label}
             </Link>
           ))}
@@ -57,7 +80,7 @@ export function Header() {
 function MobileNav({ links }: { links: typeof NAV_LINKS }) {
   return (
     <details className="relative md:hidden">
-      <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center text-white [&::-webkit-details-marker]:hidden">
+      <summary className="flex h-10 w-10 cursor-pointer list-none items-center justify-center text-[#111111] [&::-webkit-details-marker]:hidden">
         <span className="sr-only">Open menu</span>
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -72,19 +95,19 @@ function MobileNav({ links }: { links: typeof NAV_LINKS }) {
         </svg>
       </summary>
       <nav
-        className="absolute right-0 top-full mt-3 w-48 border border-neutral-800 bg-black py-2"
+        className="absolute right-0 top-full mt-3 w-48 rounded-xl border border-[#E5E7EB] bg-white py-2 shadow-lg"
         aria-label="Mobile navigation"
       >
         {links.map((link) => (
           <Link
             key={link.href}
             href={link.href}
-            className="block px-5 py-3 text-sm text-neutral-400 transition-colors hover:text-white"
+            className="block px-5 py-3 text-sm text-[#6B7280] transition-colors hover:text-[#111111]"
           >
             {link.label}
           </Link>
         ))}
-        <div className="border-t border-neutral-800 px-5 py-3">
+        <div className="border-t border-[#E5E7EB] px-5 py-3">
           <DirectionsButton className="w-full text-center" />
         </div>
       </nav>

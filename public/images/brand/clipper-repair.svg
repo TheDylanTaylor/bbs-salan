@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 800" fill="none">
+  <rect width="1000" height="800" fill="#F8F9FA"/>
+  <rect x="80" y="120" width="840" height="560" rx="20" fill="#FFFFFF" stroke="#E5E7EB"/>
+  <ellipse cx="500" cy="380" rx="180" ry="120" fill="#2563EB" opacity="0.08"/>
+  <rect x="380" y="300" width="240" height="160" rx="40" fill="#D4A017" opacity="0.12"/>
+  <path d="M420 380 L480 340 L580 340 L640 380 L640 460 L420 460 Z" stroke="#6B7280" stroke-width="3" fill="none" opacity="0.3"/>
+  <text x="80" y="740" fill="#6B7280" font-family="system-ui,sans-serif" font-size="24" letter-spacing="4">CLIPPER REPAIR</text>
+</svg>

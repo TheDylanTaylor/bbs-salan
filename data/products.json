@@ -1,439 +1,58 @@
 {
-  "categories": [
-    "All",
-    "Clippers & Trimmers",
-    "Shears & Razors",
-    "Capes & Smocks",
-    "Shaving Products",
-    "Hair Color & Chemical Products",
-    "Styling Products",
-    "Skin & Beard Care",
-    "Salon Tools & Equipment",
-    "Sanitation Supplies",
-    "Accessories"
-  ],
+  "categories": ["All", "Clippers & Trimmers"],
   "products": [
     {
-      "id": "wahl-senior",
-      "name": "Wahl Senior Clipper",
+      "id": "stylecraft-saber-ii",
+      "name": "StyleCraft Pro Saber II",
       "category": "Clippers & Trimmers",
-      "description": "Professional-grade corded clipper with powerful motor for all hair types.",
-      "image": "/images/placeholders/clippers.svg",
-      "priceRange": "$80–$120",
+      "description": "Professional metal clipper with digital brushless Eon motor.",
+      "image": "/images/products/stylecraft-saber-ii.png",
+      "priceRange": "$290",
       "cta": "See in store"
     },
     {
-      "id": "andis-master",
-      "name": "Andis Master Clipper",
+      "id": "jrl-2020c",
+      "name": "JRL 2020C Fade Blade Clipper",
       "category": "Clippers & Trimmers",
-      "description": "Classic adjustable blade clipper trusted by barbers for decades.",
-      "image": "/images/placeholders/clippers.svg",
-      "priceRange": "$90–$130",
+      "description": "Professional cordless hair clipper with fade blade and charging stand.",
+      "image": "/images/products/jrl-2020c.png",
+      "priceRange": "$280",
       "cta": "See in store"
     },
     {
-      "id": "babyliss-fxone",
-      "name": "BabylissPRO FXone Clipper",
+      "id": "stylecraft-instinct-metal",
+      "name": "StyleCraft Metal Edition Instinct",
       "category": "Clippers & Trimmers",
-      "description": "High-torque brushless motor with metal housing and lithium-ion power.",
-      "image": "/images/placeholders/clippers.svg",
-      "priceRange": "$150–$200",
+      "description": "Professional vector motor clipper with rear metal housing.",
+      "image": "/images/products/stylecraft-instinct-metal.png",
+      "priceRange": "$265",
       "cta": "See in store"
     },
     {
-      "id": "wahl-magic-clip-cordless",
-      "name": "Wahl Magic Clip Cordless",
+      "id": "stylecraft-instinct-x",
+      "name": "StyleCraft Instinct X",
       "category": "Clippers & Trimmers",
-      "description": "Cordless stagger-tooth clipper for seamless fades and bulk removal.",
-      "image": "/images/placeholders/clippers.svg",
-      "priceRange": "$120–$160",
+      "description": "Professional vector motor clipper with intuitive torque control.",
+      "image": "/images/products/stylecraft-instinct-x.png",
+      "priceRange": "$300",
       "cta": "See in store"
     },
     {
-      "id": "andis-gtx-trimmer",
-      "name": "Andis GTX Trimmer",
+      "id": "babyliss-dual-coil",
+      "name": "BaBylissPRO Dual Coil Clipper",
       "category": "Clippers & Trimmers",
-      "description": "Deep-tooth T-blade trimmer for crisp line-ups and detail work.",
-      "image": "/images/placeholders/clippers.svg",
-      "priceRange": "$70–$100",
+      "description": "High-performance dual-coil motor clipper with unmatched power and precision.",
+      "image": "/images/products/babyliss-dual-coil.png",
+      "priceRange": "$225",
       "cta": "See in store"
     },
     {
-      "id": "oster-fast-feed",
-      "name": "Oster Fast Feed Clipper",
+      "id": "wahl-senior-2",
+      "name": "Wahl Senior 2.0",
       "category": "Clippers & Trimmers",
-      "description": "Quiet pivot motor clipper with adjustable blade for versatile cutting.",
-      "image": "/images/placeholders/clippers.svg",
-      "priceRange": "$60–$90",
-      "cta": "See in store"
-    },
-    {
-      "id": "babyliss-skeleton-trimmer",
-      "name": "BabylissPRO Skeleton Trimmer",
-      "category": "Clippers & Trimmers",
-      "description": "Zero-gap ready skeleton trimmer with 7200 RPM motor.",
-      "image": "/images/placeholders/clippers.svg",
-      "priceRange": "$100–$140",
-      "cta": "See in store"
-    },
-    {
-      "id": "joewell-shears",
-      "name": "Joewell Professional Shears",
-      "category": "Shears & Razors",
-      "description": "Japanese steel barber shears with ergonomic offset handles.",
-      "image": "/images/placeholders/shears.svg",
-      "priceRange": "$150–$300",
-      "cta": "See in store"
-    },
-    {
-      "id": "kasho-shears",
-      "name": "Kasho Design Master Shears",
-      "category": "Shears & Razors",
-      "description": "Premium convex-edge shears for precision point cutting.",
-      "image": "/images/placeholders/shears.svg",
-      "priceRange": "$200–$400",
-      "cta": "See in store"
-    },
-    {
-      "id": "feather-razor",
-      "name": "Feather Artist Club SS Razor",
-      "category": "Shears & Razors",
-      "description": "Professional straight razor system with replaceable blades.",
-      "image": "/images/placeholders/shears.svg",
-      "priceRange": "$40–$70",
-      "cta": "See in store"
-    },
-    {
-      "id": "derby-blades",
-      "name": "Derby Premium Blades (100pk)",
-      "category": "Shears & Razors",
-      "description": "Stainless steel single-edge blades for shavettes and razors.",
-      "image": "/images/placeholders/shears.svg",
-      "priceRange": "$10–$20",
-      "cta": "See in store"
-    },
-    {
-      "id": "thinning-shears",
-      "name": "Professional Thinning Shears 6.5\"",
-      "category": "Shears & Razors",
-      "description": "30-tooth thinning shears for texturizing and blending.",
-      "image": "/images/placeholders/shears.svg",
-      "priceRange": "$50–$90",
-      "cta": "See in store"
-    },
-    {
-      "id": "barber-cape",
-      "name": "Professional Barber Cape",
-      "category": "Capes & Smocks",
-      "description": "Water-resistant nylon cape with snap closure and neck strip pocket.",
-      "image": "/images/placeholders/capes.svg",
-      "priceRange": "$15–$30",
-      "cta": "See in store"
-    },
-    {
-      "id": "salon-smock",
-      "name": "Stylist Smock",
-      "category": "Capes & Smocks",
-      "description": "Lightweight chemical-resistant smock with multiple pockets.",
-      "image": "/images/placeholders/capes.svg",
-      "priceRange": "$25–$45",
-      "cta": "See in store"
-    },
-    {
-      "id": "kids-cape",
-      "name": "Kids Barber Cape",
-      "category": "Capes & Smocks",
-      "description": "Fun printed cape designed for young clients in the chair.",
-      "image": "/images/placeholders/capes.svg",
-      "priceRange": "$12–$22",
-      "cta": "See in store"
-    },
-    {
-      "id": "proraso-shaving-cream",
-      "name": "Proraso Shaving Cream",
-      "category": "Shaving Products",
-      "description": "Classic Italian shaving cream with eucalyptus and menthol.",
-      "image": "/images/placeholders/shaving.svg",
-      "priceRange": "$8–$15",
-      "cta": "See in store"
-    },
-    {
-      "id": "cremo-shave",
-      "name": "Cremo Shave Cream",
-      "category": "Shaving Products",
-      "description": "Concentrated shave cream for a smooth, irritation-free shave.",
-      "image": "/images/placeholders/shaving.svg",
-      "priceRange": "$6–$12",
-      "cta": "See in store"
-    },
-    {
-      "id": "clubman-aftershave",
-      "name": "Clubman Pinaud Aftershave",
-      "category": "Shaving Products",
-      "description": "Barbershop classic aftershave lotion with refreshing scent.",
-      "image": "/images/placeholders/shaving.svg",
-      "priceRange": "$8–$14",
-      "cta": "See in store"
-    },
-    {
-      "id": "alum-block",
-      "name": "Alum Block",
-      "category": "Shaving Products",
-      "description": "Natural styptic block to soothe skin and close pores after shaving.",
-      "image": "/images/placeholders/shaving.svg",
-      "priceRange": "$5–$10",
-      "cta": "See in store"
-    },
-    {
-      "id": "hot-towel-warmer",
-      "name": "Hot Towel Warmer",
-      "category": "Shaving Products",
-      "description": "Compact towel warmer for the full hot towel shave experience.",
-      "image": "/images/placeholders/shaving.svg",
-      "priceRange": "$80–$150",
-      "cta": "See in store"
-    },
-    {
-      "id": "20vol-developer",
-      "name": "20 Volume Developer",
-      "category": "Hair Color & Chemical Products",
-      "description": "Standard lift developer for permanent hair color applications.",
-      "image": "/images/placeholders/color.svg",
-      "priceRange": "$8–$18",
-      "cta": "See in store"
-    },
-    {
-      "id": "bleach-powder",
-      "name": "Professional Bleach Powder",
-      "category": "Hair Color & Chemical Products",
-      "description": "Dust-free lightening powder for controlled lift up to 7 levels.",
-      "image": "/images/placeholders/color.svg",
-      "priceRange": "$15–$30",
-      "cta": "See in store"
-    },
-    {
-      "id": "color-bowl-brush",
-      "name": "Color Bowl & Brush Set",
-      "category": "Hair Color & Chemical Products",
-      "description": "Non-slip mixing bowl with tint brush and whisk.",
-      "image": "/images/placeholders/color.svg",
-      "priceRange": "$10–$20",
-      "cta": "See in store"
-    },
-    {
-      "id": "foil-sheets",
-      "name": "Highlight Foil Sheets",
-      "category": "Hair Color & Chemical Products",
-      "description": "Pre-cut aluminum foil sheets for highlights and balayage.",
-      "image": "/images/placeholders/color.svg",
-      "priceRange": "$8–$15",
-      "cta": "See in store"
-    },
-    {
-      "id": "color-protect-shampoo",
-      "name": "Color Protect Shampoo",
-      "category": "Hair Color & Chemical Products",
-      "description": "Sulfate-free shampoo formulated to extend color vibrancy.",
-      "image": "/images/placeholders/color.svg",
-      "priceRange": "$12–$25",
-      "cta": "See in store"
-    },
-    {
-      "id": "suavecito-pomade",
-      "name": "Suavecito Original Pomade",
-      "category": "Styling Products",
-      "description": "Water-based pomade with strong hold and easy wash-out.",
-      "image": "/images/placeholders/styling.svg",
-      "priceRange": "$10–$16",
-      "cta": "See in store"
-    },
-    {
-      "id": "reuzel-pink",
-      "name": "Reuzel Pink Pomade",
-      "category": "Styling Products",
-      "description": "Heavy hold grease pomade for classic slick styles.",
-      "image": "/images/placeholders/styling.svg",
-      "priceRange": "$8–$14",
-      "cta": "See in store"
-    },
-    {
-      "id": "got2b-gel",
-      "name": "Got2b Ultra Glued Gel",
-      "category": "Styling Products",
-      "description": "Maximum hold styling gel for sculpted looks.",
-      "image": "/images/placeholders/styling.svg",
-      "priceRange": "$6–$10",
-      "cta": "See in store"
-    },
-    {
-      "id": "kenra-hairspray",
-      "name": "Kenra Volume Hairspray 25",
-      "category": "Styling Products",
-      "description": "Ultra-hold hairspray with humidity resistance.",
-      "image": "/images/placeholders/styling.svg",
-      "priceRange": "$18–$28",
-      "cta": "See in store"
-    },
-    {
-      "id": "texturizing-spray",
-      "name": "Sea Salt Texturizing Spray",
-      "category": "Styling Products",
-      "description": "Matte finish texturizing spray for beachy, lived-in looks.",
-      "image": "/images/placeholders/styling.svg",
-      "priceRange": "$12–$20",
-      "cta": "See in store"
-    },
-    {
-      "id": "beard-oil",
-      "name": "Premium Beard Oil",
-      "category": "Skin & Beard Care",
-      "description": "Nourishing blend of argan and jojoba oils for beard and skin.",
-      "image": "/images/placeholders/beard.svg",
-      "priceRange": "$12–$22",
-      "cta": "See in store"
-    },
-    {
-      "id": "beard-balm",
-      "name": "Beard Balm & Wax",
-      "category": "Skin & Beard Care",
-      "description": "Medium hold balm to condition, shape, and tame beard hair.",
-      "image": "/images/placeholders/beard.svg",
-      "priceRange": "$10–$18",
-      "cta": "See in store"
-    },
-    {
-      "id": "aftershave-balm",
-      "name": "Soothing Aftershave Balm",
-      "category": "Skin & Beard Care",
-      "description": "Alcohol-free balm to calm irritation and moisturize post-shave.",
-      "image": "/images/placeholders/beard.svg",
-      "priceRange": "$10–$18",
-      "cta": "See in store"
-    },
-    {
-      "id": "face-moisturizer",
-      "name": "Professional Face Moisturizer",
-      "category": "Skin & Beard Care",
-      "description": "Lightweight daily moisturizer suitable for all skin types.",
-      "image": "/images/placeholders/beard.svg",
-      "priceRange": "$15–$25",
-      "cta": "See in store"
-    },
-    {
-      "id": "babyliss-dryer",
-      "name": "BabylissPRO Nano Titanium Dryer",
-      "category": "Salon Tools & Equipment",
-      "description": "2000W ionic dryer with multiple heat and speed settings.",
-      "image": "/images/placeholders/tools.svg",
-      "priceRange": "$80–$130",
-      "cta": "See in store"
-    },
-    {
-      "id": "chi-flat-iron",
-      "name": "CHI Original Flat Iron",
-      "category": "Salon Tools & Equipment",
-      "description": "Ceramic plate flat iron for smooth, frizz-free styling.",
-      "image": "/images/placeholders/tools.svg",
-      "priceRange": "$90–$140",
-      "cta": "See in store"
-    },
-    {
-      "id": "curling-iron-set",
-      "name": "Professional Curling Iron Set",
-      "category": "Salon Tools & Equipment",
-      "description": "Multi-barrel curling iron set with heat-resistant glove.",
-      "image": "/images/placeholders/tools.svg",
-      "priceRange": "$60–$100",
-      "cta": "See in store"
-    },
-    {
-      "id": "station-mirror",
-      "name": "Station Mirror with LED",
-      "category": "Salon Tools & Equipment",
-      "description": "Adjustable salon mirror with built-in LED ring light.",
-      "image": "/images/placeholders/tools.svg",
-      "priceRange": "$50–$90",
-      "cta": "See in store"
-    },
-    {
-      "id": "barbicide",
-      "name": "Barbicide Concentrate",
-      "category": "Sanitation Supplies",
-      "description": "Hospital-grade disinfectant for combs, shears, and tools.",
-      "image": "/images/placeholders/sanitation.svg",
-      "priceRange": "$12–$22",
-      "cta": "See in store"
-    },
-    {
-      "id": "disinfectant-jar",
-      "name": "Disinfectant Jar with Basket",
-      "category": "Sanitation Supplies",
-      "description": "Glass jar with removable basket for tool immersion.",
-      "image": "/images/placeholders/sanitation.svg",
-      "priceRange": "$15–$30",
-      "cta": "See in store"
-    },
-    {
-      "id": "neck-strips",
-      "name": "Neck Strips (100pk)",
-      "category": "Sanitation Supplies",
-      "description": "Disposable paper neck strips for barber capes.",
-      "image": "/images/placeholders/sanitation.svg",
-      "priceRange": "$5–$10",
-      "cta": "See in store"
-    },
-    {
-      "id": "gloves-box",
-      "name": "Nitrile Gloves (Box of 100)",
-      "category": "Sanitation Supplies",
-      "description": "Powder-free nitrile gloves for color and chemical services.",
-      "image": "/images/placeholders/sanitation.svg",
-      "priceRange": "$10–$18",
-      "cta": "See in store"
-    },
-    {
-      "id": "clipper-guards",
-      "name": "Universal Clipper Guard Set",
-      "category": "Accessories",
-      "description": "8-piece guard set compatible with most professional clippers.",
-      "image": "/images/placeholders/accessories.svg",
-      "priceRange": "$15–$25",
-      "cta": "See in store"
-    },
-    {
-      "id": "clipper-oil",
-      "name": "Clipper Oil & Coolant",
-      "category": "Accessories",
-      "description": "Blade lubricant to extend clipper life and reduce heat.",
-      "image": "/images/placeholders/accessories.svg",
-      "priceRange": "$5–$10",
-      "cta": "See in store"
-    },
-    {
-      "id": "barber-comb-set",
-      "name": "Professional Comb Set",
-      "category": "Accessories",
-      "description": "Carbon fiber combs in assorted sizes for cutting and styling.",
-      "image": "/images/placeholders/accessories.svg",
-      "priceRange": "$12–$20",
-      "cta": "See in store"
-    },
-    {
-      "id": "paddle-brush",
-      "name": "Paddle Brush",
-      "category": "Accessories",
-      "description": "Wide paddle brush for blow-drying and detangling.",
-      "image": "/images/placeholders/accessories.svg",
-      "priceRange": "$10–$18",
-      "cta": "See in store"
-    },
-    {
-      "id": "blade-screws",
-      "name": "Replacement Blade Screws",
-      "category": "Accessories",
-      "description": "Assorted blade screws for Wahl, Andis, and Oster clippers.",
-      "image": "/images/placeholders/accessories.svg",
-      "priceRange": "$4–$8",
+      "description": "5-Star Series cord/cordless clipper with 8000 RPM motor and fast-charging stand.",
+      "image": "/images/products/wahl-senior-2.png",
+      "priceRange": "$225",
       "cta": "See in store"
     }
   ]

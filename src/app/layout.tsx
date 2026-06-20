@@ -30,7 +30,7 @@ export default function RootLayout({
       <head>
         <LocalBusinessSchema />
       </head>
-      <body className="flex min-h-full flex-col bg-black text-white">
+      <body className="flex min-h-full flex-col bg-white text-[#111111]">
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

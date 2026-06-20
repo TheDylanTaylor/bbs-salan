@@ -3,6 +3,7 @@ import { PageHero } from "@/components/home/HomeSections";
 import {
   GoogleMapEmbed,
   ContactBlock,
+  VisitStorefrontImage,
 } from "@/components/map/MapComponents";
 
 export const metadata: Metadata = {
@@ -18,8 +19,9 @@ export default function VisitPage() {
         title="Visit"
         subtitle="202 E Martin Luther King Jr Blvd, Ste B — South Los Angeles."
       />
-      <section className="page-container pb-20 sm:pb-28">
-        <div className="grid gap-16 lg:grid-cols-2">
+      <section className="page-container pb-28 sm:pb-36">
+        <VisitStorefrontImage />
+        <div className="grid gap-12 lg:grid-cols-2">
           <GoogleMapEmbed />
           <ContactBlock />
         </div>

@@ -1,0 +1,11 @@
+{
+  "hero": "/images/brand/hero-storefront.svg",
+  "aboutStore": "/images/brand/store-interior.svg",
+  "visitExterior": "/images/brand/storefront-exterior.svg",
+  "servicesRepair": "/images/brand/clipper-repair.svg",
+  "gallery": [
+    "/images/brand/gallery-1.svg",
+    "/images/brand/gallery-2.svg",
+    "/images/brand/gallery-3.svg"
+  ]
+}

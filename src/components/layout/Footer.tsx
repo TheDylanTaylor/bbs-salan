@@ -3,18 +3,18 @@ import { business, HOURS_LABELS, HOURS_ORDER } from "@/lib/business";
 
 export function StoreInfoBar() {
   return (
-    <section className="border-b border-neutral-800/80" aria-label="Store information">
-      <div className="page-container flex flex-col gap-2 py-4 text-sm text-neutral-500 sm:flex-row sm:items-center sm:justify-between">
+    <section className="border-b border-[#E5E7EB]" aria-label="Store information">
+      <div className="page-container flex flex-col gap-2 py-4 text-sm text-[#6B7280] sm:flex-row sm:items-center sm:justify-between">
         <a
           href={business.directionsUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="transition-colors hover:text-white"
+          className="transition-colors hover:text-[#2563EB]"
         >
           {business.address.full}
         </a>
         <div className="flex flex-wrap items-center gap-x-6 gap-y-1">
-          <a href={`tel:${business.phoneTel}`} className="transition-colors hover:text-white">
+          <a href={`tel:${business.phoneTel}`} className="transition-colors hover:text-[#2563EB]">
             {business.phone}
           </a>
           <span>{business.hoursSummary}</span>
@@ -26,28 +26,29 @@ export function StoreInfoBar() {
 
 export function Footer() {
   return (
-    <footer className="mt-auto border-t border-neutral-800">
-      <div className="page-container section-spacing !py-16">
+    <footer className="mt-auto border-t border-[#E5E7EB] bg-[#F8F9FA]">
+      <div className="page-container py-28 sm:py-32">
         <div className="grid gap-16 md:grid-cols-2">
           <div>
-            <p className="text-sm font-medium tracking-[0.2em] uppercase text-white">
+            <p className="flex items-center gap-2 text-sm font-semibold tracking-[0.15em] text-[#111111] uppercase">
               BBS Barber &amp; Salon Supply
+              <span className="h-1 w-1 rounded-full bg-[#D4A017]" aria-hidden="true" />
             </p>
-            <p className="mt-4 max-w-sm text-sm leading-relaxed text-neutral-500">
+            <p className="mt-6 max-w-sm body-text">
               {business.tagline}
             </p>
-            <div className="mt-8 space-y-2 text-sm text-neutral-400">
+            <div className="mt-8 space-y-2 text-sm text-[#6B7280]">
               <a
                 href={business.directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block transition-colors hover:text-white"
+                className="block transition-colors hover:text-[#2563EB]"
               >
                 {business.address.full}
               </a>
               <a
                 href={`tel:${business.phoneTel}`}
-                className="block transition-colors hover:text-white"
+                className="block transition-colors hover:text-[#2563EB]"
               >
                 {business.phone}
               </a>
@@ -57,7 +58,9 @@ export function Footer() {
 
           <div className="grid grid-cols-2 gap-8 text-sm">
             <div>
-              <p className="mb-4 text-xs tracking-widest text-neutral-600 uppercase">Pages</p>
+              <p className="mb-4 text-xs font-medium tracking-widest text-[#6B7280] uppercase">
+                Pages
+              </p>
               <ul className="space-y-3">
                 <li><Link href="/products" className="link-subtle">Products</Link></li>
                 <li><Link href="/services" className="link-subtle">Services</Link></li>
@@ -67,7 +70,9 @@ export function Footer() {
               </ul>
             </div>
             <div>
-              <p className="mb-4 text-xs tracking-widest text-neutral-600 uppercase">Social</p>
+              <p className="mb-4 text-xs font-medium tracking-widest text-[#6B7280] uppercase">
+                Social
+              </p>
               <ul className="space-y-3">
                 <li>
                   <a
@@ -90,8 +95,10 @@ export function Footer() {
                   </a>
                 </li>
               </ul>
-              <p className="mt-8 mb-3 text-xs tracking-widest text-neutral-600 uppercase">Hours</p>
-              <ul className="space-y-1 text-neutral-500">
+              <p className="mt-8 mb-3 text-xs font-medium tracking-widest text-[#6B7280] uppercase">
+                Hours
+              </p>
+              <ul className="space-y-1 text-[#6B7280]">
                 {HOURS_ORDER.map((day) => (
                   <li key={day} className="flex justify-between gap-4">
                     <span>{HOURS_LABELS[day]}</span>
@@ -103,7 +110,7 @@ export function Footer() {
           </div>
         </div>
 
-        <p className="mt-16 text-xs text-neutral-600">
+        <p className="mt-16 text-xs text-[#6B7280]">
           &copy; {new Date().getFullYear()} BBS Barber &amp; Salon Supply
         </p>
       </div>

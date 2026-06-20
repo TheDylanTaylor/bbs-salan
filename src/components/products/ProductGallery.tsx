@@ -38,9 +38,15 @@ function ProductGalleryInner({
       : products.filter((p) => p.category === selectedCategory);
 
   return (
-    <div>
-      <CategoryFilter selected={selectedCategory} onSelect={setSelectedCategory} />
-      <ProductGrid products={filtered} />
-    </div>
+    <>
+      <div className="border-b border-[#E5E7EB] bg-[#F8F9FA]">
+        <div className="page-container py-10 sm:py-12">
+          <CategoryFilter selected={selectedCategory} onSelect={setSelectedCategory} />
+        </div>
+      </div>
+      <div className="page-container bg-white py-12 sm:py-16">
+        <ProductGrid products={filtered} />
+      </div>
+    </>
   );
 }

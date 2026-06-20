@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { PageHero } from "@/components/home/HomeSections";
 import { business } from "@/lib/business";
+import { siteImages } from "@/lib/site-images";
 import { DirectionsButton } from "@/components/layout/Header";
+import { BrandImage } from "@/components/ui/BrandImage";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -40,25 +42,35 @@ export default function AboutPage() {
         title="About"
         subtitle="Built by professionals, for professionals."
       />
-      <section className="page-container pb-20 sm:pb-28">
-        <p className="max-w-2xl text-neutral-400 leading-relaxed">
-          {business.about}
-        </p>
+      <section className="page-container pb-28 sm:pb-36">
+        <div className="grid items-start gap-12 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <span className="badge-gold">Est. 25+ Years</span>
+            <p className="mt-6 body-text">
+              {business.about}
+            </p>
+          </div>
+          <BrandImage
+            src={siteImages.aboutStore}
+            alt="Inside BBS Barber and Salon Supply"
+            aspect="portrait"
+          />
+        </div>
 
-        <ul className="mt-16 divide-y divide-neutral-800 border-t border-neutral-800">
+        <div className="mt-20 grid gap-8 sm:grid-cols-2">
           {HIGHLIGHTS.map((item) => (
-            <li key={item.title} className="py-8">
-              <h2 className="text-white">{item.title}</h2>
-              <p className="mt-2 text-sm text-neutral-500 leading-relaxed">
+            <div key={item.title} className="card">
+              <h2 className="text-lg font-semibold text-[#111111]">{item.title}</h2>
+              <p className="mt-3 body-text text-base">
                 {item.description}
               </p>
-            </li>
+            </div>
           ))}
-        </ul>
+        </div>
 
-        <div className="mt-16 border border-neutral-800 px-8 py-10">
-          <h2 className="text-lg font-light text-white">Visit in person</h2>
-          <p className="mt-3 max-w-lg text-sm text-neutral-500">
+        <div className="card mt-20">
+          <h2 className="text-xl font-semibold text-[#111111] sm:text-2xl">Visit in person</h2>
+          <p className="mt-4 max-w-lg body-text">
             This site showcases what we carry. The full experience is in the
             store.
           </p>

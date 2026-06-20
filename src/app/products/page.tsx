@@ -16,8 +16,8 @@ export default function ProductsPage() {
         title="Products"
         subtitle="In-store selection. Visit us to see the full catalog."
       />
-      <section className="page-container pb-20 sm:pb-28">
-        <Suspense fallback={<p className="text-neutral-500">Loading...</p>}>
+      <section className="pb-28 sm:pb-36">
+        <Suspense fallback={<p className="page-container py-12 text-[#6B7280]">Loading...</p>}>
           <ProductGallery />
         </Suspense>
       </section>

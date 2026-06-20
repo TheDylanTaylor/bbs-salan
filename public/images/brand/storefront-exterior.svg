@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" fill="none">
+  <rect width="1200" height="800" fill="#F8F9FA"/>
+  <path d="M120 600 L120 280 L600 160 L1080 280 L1080 600 Z" fill="#FFFFFF" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="480" y="400" width="240" height="200" rx="8" fill="#2563EB" opacity="0.08"/>
+  <rect x="200" y="320" width="120" height="160" rx="4" fill="#E5E7EB" opacity="0.5"/>
+  <rect x="880" y="320" width="120" height="160" rx="4" fill="#E5E7EB" opacity="0.5"/>
+  <circle cx="600" cy="240" r="8" fill="#D4A017"/>
+  <text x="120" y="720" fill="#6B7280" font-family="system-ui,sans-serif" font-size="28" letter-spacing="4">EXTERIOR</text>
+</svg>

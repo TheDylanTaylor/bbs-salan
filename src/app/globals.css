@@ -1,19 +1,23 @@
 @import "tailwindcss";
 
 :root {
-  --background: #000000;
-  --foreground: #ffffff;
-  --muted: #737373;
-  --border: #262626;
-  --surface: #0a0a0a;
+  --background: #ffffff;
+  --surface: #f8f9fa;
+  --foreground: #111111;
+  --muted: #6b7280;
+  --accent: #2563eb;
+  --gold: #d4a017;
+  --border: #e5e7eb;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-gold: var(--gold);
   --color-border: var(--border);
-  --color-surface: var(--surface);
   --font-sans: var(--font-inter);
 }
 
@@ -21,39 +25,83 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 16px;
   -webkit-font-smoothing: antialiased;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @layer components {
   .page-container {
-    @apply mx-auto max-w-5xl px-6 sm:px-8;
+    @apply mx-auto max-w-7xl px-6 sm:px-8;
   }
 
   .section-spacing {
-    @apply py-20 sm:py-28;
+    @apply py-28 sm:py-36;
   }
 
   .section-title {
-    @apply text-2xl font-light tracking-tight text-white sm:text-3xl;
+    @apply text-4xl font-semibold tracking-tight text-[#111111] sm:text-5xl;
   }
 
   .section-lead {
-    @apply mt-3 max-w-xl text-base leading-relaxed text-neutral-400;
+    @apply mt-4 max-w-2xl text-lg leading-relaxed text-[#6B7280] sm:text-xl;
+  }
+
+  .body-text {
+    @apply text-base leading-relaxed text-[#6B7280] sm:text-lg;
+  }
+
+  .hero-title {
+    @apply text-[2.75rem] font-semibold leading-[1.1] tracking-tight text-[#111111] sm:text-6xl lg:text-[4.5rem];
   }
 
   .btn-primary {
-    @apply inline-flex min-h-11 items-center justify-center bg-white px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90;
+    @apply inline-flex min-h-11 items-center justify-center rounded-xl bg-[#2563EB] px-6 py-3 text-sm font-medium text-white transition-colors duration-200 hover:bg-blue-700;
   }
 
   .btn-secondary {
-    @apply inline-flex min-h-11 items-center justify-center border border-neutral-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-white;
+    @apply inline-flex min-h-11 items-center justify-center rounded-xl border border-[#E5E7EB] bg-white px-6 py-3 text-sm font-medium text-[#111111] transition-colors duration-200 hover:border-[#2563EB];
+  }
+
+  .btn-featured {
+    @apply inline-flex min-h-11 items-center justify-center rounded-xl border border-[#D4A017]/40 bg-white px-6 py-3 text-sm font-medium text-[#111111] transition-colors duration-200 hover:border-[#D4A017] hover:bg-[#D4A017]/5;
   }
 
   .link-subtle {
-    @apply text-sm text-neutral-400 transition-colors hover:text-white;
+    @apply text-sm text-[#6B7280] transition-colors duration-200 hover:text-[#2563EB];
   }
 
-  .divider {
-    @apply border-t border-neutral-800;
+  .card {
+    @apply rounded-2xl border border-[#E5E7EB] bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md sm:p-8;
+  }
+
+  .badge-gold {
+    @apply inline-flex items-center rounded-full border border-[#D4A017]/20 bg-[#D4A017]/10 px-3 py-1 text-xs font-medium tracking-wide text-[#D4A017] uppercase;
+  }
+
+  .accent-gold {
+    @apply text-[#D4A017];
+  }
+
+  .section-white {
+    @apply bg-white;
+  }
+
+  .section-muted {
+    @apply bg-[#F8F9FA];
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 600ms ease-out both;
   }
 }
