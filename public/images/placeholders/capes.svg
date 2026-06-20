@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" fill="none">
+  <rect width="400" height="300" fill="#171717"/>
+  <rect x="40" y="60" width="320" height="180" rx="12" fill="#262626" stroke="#f59e0b" stroke-width="2"/>
+  <path d="M100 120 Q200 80 300 120 L300 200 Q200 240 100 200 Z" fill="#f59e0b" opacity="0.25"/>
+  <circle cx="200" cy="110" r="15" fill="#f59e0b" opacity="0.5"/>
+  <text x="200" y="260" text-anchor="middle" fill="#a3a3a3" font-family="sans-serif" font-size="14">Capes &amp; Smocks</text>
+</svg>

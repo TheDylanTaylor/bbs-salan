@@ -1,0 +1,114 @@
+{
+  "name": "BBS Barber & Salon Supply",
+  "tagline": "Everything a barber or stylist needs — clippers, cosmetology products, and on-site clipper repair.",
+  "address": {
+    "street": "202 E Martin Luther King Jr Blvd, Ste B",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90011",
+    "full": "202 E Martin Luther King Jr Blvd, Ste B, Los Angeles, CA 90011"
+  },
+  "phone": "(323) 715-4214",
+  "phoneTel": "+13237154214",
+  "hours": {
+    "monday": "8:30am – 5:00pm",
+    "tuesday": "8:30am – 5:00pm",
+    "wednesday": "8:30am – 5:00pm",
+    "thursday": "8:30am – 5:00pm",
+    "friday": "8:30am – 5:00pm",
+    "saturday": "9:00am – 1:00pm",
+    "sunday": "Closed"
+  },
+  "hoursSummary": "Mon–Fri 8:30am–5:00pm, Sat 9:00am–1:00pm, Sun Closed",
+  "coordinates": {
+    "lat": 34.0109912,
+    "lng": -118.2714562
+  },
+  "social": {
+    "instagram": {
+      "handle": "@bbs6745",
+      "url": "https://www.instagram.com/bbs6745/"
+    },
+    "tiktok": {
+      "handle": "@bbs_6745",
+      "url": "https://www.tiktok.com/@bbs_6745"
+    }
+  },
+  "googleMapsUrl": "https://www.google.com/maps/search/?api=1&query=34.0109912,-118.2714562",
+  "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=34.0109912,-118.2714562",
+  "about": "For over 25 years, BBS Barber & Salon Supply has been the go-to destination for barbers, cosmetologists, and stylists across Los Angeles. We carry the brands professionals trust — Wahl, Andis, Oster, BabylissPRO, and more — plus on-site clipper and trimmer repair you won't find at big-box stores.",
+  "reviews": [
+    {
+      "id": "review-1",
+      "author": "Alex E.",
+      "rating": 5,
+      "text": "Rafa and his whole team are great — they always take care of me. They have all the newest products available here as well. Thank you!",
+      "date": "2024-09-23",
+      "verified": true,
+      "source": "yelp"
+    },
+    {
+      "id": "review-2",
+      "author": "Marcus T.",
+      "rating": 5,
+      "text": "Best barber supply in South LA. Dropped off my Wahl Seniors for sharpening and had them back same day. The on-site technician knows his stuff.",
+      "date": "2025-01-15",
+      "verified": false,
+      "source": "placeholder"
+    },
+    {
+      "id": "review-3",
+      "author": "Diana R.",
+      "rating": 5,
+      "text": "Huge selection of clippers, shears, and color products. Staff helped me find exactly what I needed for my salon setup. Will definitely be back.",
+      "date": "2024-11-08",
+      "verified": false,
+      "source": "placeholder"
+    },
+    {
+      "id": "review-4",
+      "author": "James W.",
+      "rating": 4,
+      "text": "Solid inventory of Andis and BabylissPRO tools. Prices are fair for pro-grade equipment. Clipper repair service saved me from buying new trimmers.",
+      "date": "2024-10-22",
+      "verified": false,
+      "source": "placeholder"
+    },
+    {
+      "id": "review-5",
+      "author": "Carlos M.",
+      "rating": 5,
+      "text": "Been coming here for years. They carry everything from guards and oil to full station setups. Real barbershop people who understand what we need.",
+      "date": "2025-02-03",
+      "verified": false,
+      "source": "placeholder"
+    },
+    {
+      "id": "review-6",
+      "author": "Priya S.",
+      "rating": 4,
+      "text": "Great cosmetology product selection — developers, bowls, brushes, the works. Friendly staff and easy parking on MLK Blvd.",
+      "date": "2024-12-11",
+      "verified": false,
+      "source": "placeholder"
+    },
+    {
+      "id": "review-7",
+      "author": "Andre L.",
+      "rating": 5,
+      "text": "Took my cordless trimmers in for repair and zero-gap adjustment. Walked out with them running like new. This is why I shop local.",
+      "date": "2025-03-01",
+      "verified": false,
+      "source": "placeholder"
+    },
+    {
+      "id": "review-8",
+      "author": "Sofia G.",
+      "rating": 4,
+      "text": "Found all my styling products — pomades, sprays, beard oils. The team pointed me to the right line for my chair clients. Highly recommend.",
+      "date": "2024-08-19",
+      "verified": false,
+      "source": "placeholder"
+    }
+  ]
+}

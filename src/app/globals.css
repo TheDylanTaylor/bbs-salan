@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+  --muted: #737373;
+  --border: #262626;
+  --surface: #0a0a0a;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-surface: var(--surface);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .page-container {
+    @apply mx-auto max-w-5xl px-6 sm:px-8;
+  }
+
+  .section-spacing {
+    @apply py-20 sm:py-28;
+  }
+
+  .section-title {
+    @apply text-2xl font-light tracking-tight text-white sm:text-3xl;
+  }
+
+  .section-lead {
+    @apply mt-3 max-w-xl text-base leading-relaxed text-neutral-400;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-11 items-center justify-center bg-white px-6 py-3 text-sm font-medium text-black transition-opacity hover:opacity-90;
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-11 items-center justify-center border border-neutral-600 px-6 py-3 text-sm font-medium text-white transition-colors hover:border-white;
+  }
+
+  .link-subtle {
+    @apply text-sm text-neutral-400 transition-colors hover:text-white;
+  }
+
+  .divider {
+    @apply border-t border-neutral-800;
+  }
+}
