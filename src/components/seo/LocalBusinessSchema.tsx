@@ -1,10 +1,11 @@
-import { business, getAverageRating } from "@/lib/business";
+import { business } from "@/lib/business";
+import { getGoogleReviews, getReviewStats } from "@/lib/reviews";
 
 export function LocalBusinessSchema() {
-  const avgRating = getAverageRating();
-  const { reviews } = business;
+  const { average, count, hasReviews } = getReviewStats();
+  const reviews = getGoogleReviews();
 
-  const schema = {
+  const schema: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Store",
     name: business.name,
@@ -39,27 +40,31 @@ export function LocalBusinessSchema() {
       },
     ],
     sameAs: [business.social.instagram.url, business.social.tiktok.url],
-    aggregateRating: {
+  };
+
+  if (hasReviews && average != null && count > 0) {
+    schema.aggregateRating = {
       "@type": "AggregateRating",
-      ratingValue: avgRating,
-      reviewCount: reviews.length,
+      ratingValue: average,
+      reviewCount: count,
       bestRating: 5,
       worstRating: 1,
-    },
-    review: reviews
-      .filter((r) => r.verified)
-      .map((r) => ({
-        "@type": "Review",
-        author: { "@type": "Person", name: r.author },
-        datePublished: r.date,
-        reviewRating: {
-          "@type": "Rating",
-          ratingValue: r.rating,
-          bestRating: 5,
-        },
-        reviewBody: r.text,
-      })),
-  };
+    };
+  }
+
+  if (reviews.length > 0) {
+    schema.review = reviews.map((r) => ({
+      "@type": "Review",
+      author: { "@type": "Person", name: r.name },
+      datePublished: r.date,
+      reviewRating: {
+        "@type": "Rating",
+        ratingValue: r.rating,
+        bestRating: 5,
+      },
+      reviewBody: r.text,
+    }));
+  }
 
   return (
     <script

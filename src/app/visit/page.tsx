@@ -3,8 +3,9 @@ import { PageHero } from "@/components/home/HomeSections";
 import {
   GoogleMapEmbed,
   ContactBlock,
-  VisitStorefrontImage,
+  OurStoreSection,
 } from "@/components/map/MapComponents";
+import { AnimateOnScroll } from "@/components/ui/AnimateOnScroll";
 
 export const metadata: Metadata = {
   title: "Visit Us",
@@ -20,11 +21,15 @@ export default function VisitPage() {
         subtitle="202 E Martin Luther King Jr Blvd, Ste B — South Los Angeles."
       />
       <section className="page-container pb-28 sm:pb-36">
-        <VisitStorefrontImage />
         <div className="grid gap-12 lg:grid-cols-2">
-          <GoogleMapEmbed />
-          <ContactBlock />
+          <AnimateOnScroll>
+            <GoogleMapEmbed />
+          </AnimateOnScroll>
+          <AnimateOnScroll delay={120}>
+            <ContactBlock />
+          </AnimateOnScroll>
         </div>
+        <OurStoreSection />
       </section>
     </>
   );

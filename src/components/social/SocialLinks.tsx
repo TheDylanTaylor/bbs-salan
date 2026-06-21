@@ -1,59 +1,82 @@
 import { business } from "@/lib/business";
-import { siteImages } from "@/lib/site-images";
-import { BrandImage } from "@/components/ui/BrandImage";
+import { googlePlaceMeta } from "@/lib/reviews";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { StaggerGrid } from "@/components/ui/StaggerGrid";
+import {
+  GoogleMapsLogo,
+  InstagramLogo,
+  TikTokLogo,
+} from "./SocialLogos";
+
+const PLATFORMS = [
+  {
+    id: "instagram",
+    name: "Instagram",
+    handle: business.social.instagram.handle,
+    url: business.social.instagram.url,
+    Logo: InstagramLogo,
+  },
+  {
+    id: "tiktok",
+    name: "TikTok",
+    handle: business.social.tiktok.handle,
+    url: business.social.tiktok.url,
+    Logo: TikTokLogo,
+  },
+  {
+    id: "google-maps",
+    name: "Google Maps",
+    handle: "View our listing",
+    url: googlePlaceMeta.placeUrl,
+    Logo: GoogleMapsLogo,
+  },
+] as const;
+
+function SocialPlatformCard({
+  name,
+  handle,
+  url,
+  Logo,
+}: {
+  name: string;
+  handle: string;
+  url: string;
+  Logo: typeof InstagramLogo;
+}) {
+  return (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="card group flex flex-col items-center justify-center text-center !p-8 sm:!p-10"
+    >
+      <div className="flex h-28 w-28 items-center justify-center rounded-2xl bg-[#F8F9FA] transition-transform duration-300 group-hover:scale-105">
+        <Logo className="h-20 w-20" />
+      </div>
+      <p className="mt-6 text-lg font-semibold text-[#111111]">{name}</p>
+      <p className="mt-1 text-sm text-[#6B7280] transition-colors group-hover:text-[#2563EB]">
+        {handle}
+      </p>
+    </a>
+  );
+}
 
 export function SocialLinks() {
   return (
     <section className="section-white">
       <div className="page-container section-spacing">
-        <h2 className="section-title">Follow us</h2>
-        <p className="section-lead">
-          New arrivals and in-store content on social.
-        </p>
-        <div className="mt-12 grid gap-6 sm:grid-cols-3">
-          {siteImages.gallery.map((src, i) => (
-            <BrandImage
-              key={src}
-              src={src}
-              alt={`BBS in-store gallery photo ${i + 1}`}
-              aspect="square"
-            />
+        <SectionHeading
+          title="Follow us"
+          subtitle="New arrivals and in-store content on social."
+        />
+        <StaggerGrid
+          className="mt-12 grid gap-8 sm:grid-cols-3"
+          staggerMs={100}
+        >
+          {PLATFORMS.map((platform) => (
+            <SocialPlatformCard key={platform.id} {...platform} />
           ))}
-        </div>
-        <div className="mt-12 grid gap-8 sm:grid-cols-2">
-          <a
-            href={business.social.instagram.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card group flex items-center justify-between hover:shadow-lg"
-          >
-            <div>
-              <p className="font-semibold text-[#111111]">Instagram</p>
-              <p className="mt-1 text-sm text-[#6B7280]">
-                {business.social.instagram.handle}
-              </p>
-            </div>
-            <span className="text-[#6B7280] transition-colors group-hover:text-[#2563EB]">
-              →
-            </span>
-          </a>
-          <a
-            href={business.social.tiktok.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="card group flex items-center justify-between hover:shadow-lg"
-          >
-            <div>
-              <p className="font-semibold text-[#111111]">TikTok</p>
-              <p className="mt-1 text-sm text-[#6B7280]">
-                {business.social.tiktok.handle}
-              </p>
-            </div>
-            <span className="text-[#6B7280] transition-colors group-hover:text-[#2563EB]">
-              →
-            </span>
-          </a>
-        </div>
+        </StaggerGrid>
       </div>
     </section>
   );

@@ -2,8 +2,8 @@ import {
   Hero,
   ClipperRepairBanner,
   CategoryPreview,
-  ReviewsTeaser,
 } from "@/components/home/HomeSections";
+import { ReviewsTeaser } from "@/components/reviews/ReviewsTeaser";
 import { SocialLinks } from "@/components/social/SocialLinks";
 
 export default function HomePage() {

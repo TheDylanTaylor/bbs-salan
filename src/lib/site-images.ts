@@ -5,6 +5,7 @@ export interface SiteImages {
   aboutStore: string;
   visitExterior: string;
   servicesRepair: string;
+  ourStore: string[];
   gallery: string[];
 }
 

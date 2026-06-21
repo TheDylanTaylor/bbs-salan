@@ -1,13 +1,3 @@
-export interface Review {
-  id: string;
-  author: string;
-  rating: number;
-  text: string;
-  date: string;
-  verified: boolean;
-  source: "yelp" | "google" | "placeholder";
-}
-
 export interface BusinessInfo {
   name: string;
   tagline: string;
@@ -33,7 +23,6 @@ export interface BusinessInfo {
   googleMapsUrl: string;
   directionsUrl: string;
   about: string;
-  reviews: Review[];
 }
 
 export interface Product {

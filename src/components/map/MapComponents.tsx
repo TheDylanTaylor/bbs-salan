@@ -3,6 +3,8 @@ import { business, HOURS_LABELS, HOURS_ORDER } from "@/lib/business";
 import { siteImages } from "@/lib/site-images";
 import { DirectionsButton } from "@/components/layout/Header";
 import { BrandImage } from "@/components/ui/BrandImage";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { StaggerGrid } from "@/components/ui/StaggerGrid";
 
 export function GoogleMapEmbed() {
   const { lat, lng } = business.coordinates;
@@ -25,14 +27,36 @@ export function GoogleMapEmbed() {
   );
 }
 
-export function VisitStorefrontImage() {
+export function OurStoreSection() {
   return (
-    <BrandImage
-      src={siteImages.visitExterior}
-      alt="BBS Barber and Salon Supply exterior"
-      aspect="wide"
-      className="mb-12 shadow-md"
-    />
+    <section className="mt-20 border-t border-[#E5E7EB] pt-20">
+      <SectionHeading
+        title="Our store"
+        subtitle="Walk in to browse clippers, cosmetology products, and talk with our team — on-site clipper repair available."
+      />
+      <StaggerGrid
+        className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+        staggerMs={100}
+      >
+        {siteImages.ourStore.map((src, i) => (
+          <BrandImage
+            key={src}
+            src={src}
+            alt={
+              i === 0
+                ? "BBS Barber and Salon Supply storefront exterior"
+                : i === 1
+                  ? "Product aisles inside BBS Barber and Salon Supply"
+                  : i === 2
+                    ? "Clipper and trimmer display at BBS Barber and Salon Supply"
+                    : "Staff helping a customer at BBS Barber and Salon Supply"
+            }
+            aspect={i === 0 ? "wide" : "portrait"}
+            className={`group shadow-md ${i === 0 ? "sm:col-span-2 lg:col-span-3 [&_img]:object-center" : ""}`}
+          />
+        ))}
+      </StaggerGrid>
+    </section>
   );
 }
 

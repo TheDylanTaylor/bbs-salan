@@ -45,7 +45,7 @@ function ProductGalleryInner({
         </div>
       </div>
       <div className="page-container bg-white py-12 sm:py-16">
-        <ProductGrid products={filtered} />
+        <ProductGrid key={selectedCategory} products={filtered} />
       </div>
     </>
   );

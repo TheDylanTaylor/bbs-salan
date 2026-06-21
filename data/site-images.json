@@ -1,8 +1,14 @@
 {
-  "hero": "/images/brand/hero-storefront.svg",
+  "hero": "/images/brand/hero-storefront.png",
   "aboutStore": "/images/brand/store-interior.svg",
-  "visitExterior": "/images/brand/storefront-exterior.svg",
+  "visitExterior": "/images/brand/storefront-exterior.png",
   "servicesRepair": "/images/brand/clipper-repair.svg",
+  "ourStore": [
+    "/images/brand/storefront-google.jpg",
+    "/images/brand/store-aisle.png",
+    "/images/brand/store-counter.png",
+    "/images/brand/store-service.png"
+  ],
   "gallery": [
     "/images/brand/gallery-1.svg",
     "/images/brand/gallery-2.svg",

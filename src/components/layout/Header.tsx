@@ -7,6 +7,7 @@ import { business } from "@/lib/business";
 const NAV_LINKS = [
   { href: "/products", label: "Products" },
   { href: "/services", label: "Services" },
+  { href: "/reviews", label: "Reviews" },
   { href: "/visit", label: "Visit" },
   { href: "/contact", label: "Contact" },
 ];
